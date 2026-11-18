@@ -1,56 +1,11 @@
-Automatic Street Light System Using Arduino
+QA Resolution Tracking
 
-Objective
+The Automatic Street Light System was reviewed using GitHub Issues to identify and document quality-related problems.
 
-To develop an automatic street light system using Arduino and an LDR sensor that switches an LED ON or OFF depending on the surrounding light intensity.
+Five QA issues were created to track problems related to LDR sensor functionality, LED indication, light intensity threshold, analog input configuration and LED switching behavior.
 
-Components
+The identified issues were investigated, and their proposed resolutions were documented using GitHub comments.
 
-- Arduino Uno
-- LDR (Light Dependent Resistor)
-- 10kΩ Resistor
-- LED
-- 220Ω Resistor
-- Breadboard
-- Jumper Wires
+GitHub Issues were used to track the problems, while the separate qa-fixes branch was created to maintain QA-related documentation changes.
 
-Working Principle
-
-The LDR sensor detects the surrounding light intensity and sends an analog signal to Arduino through analog pin A0.
-
-Arduino continuously reads the sensor value and compares it with a predefined threshold of 500.
-
-- When the LDR value is below 500, the LED turns ON.
-- When the LDR value is 500 or above, the LED turns OFF.
-
-The sensor readings and LED status are displayed on the Serial Monitor.
-
-Expected Output
-
-- The LED should automatically turn ON in darkness.
-- The LED should automatically turn OFF in sufficient light.
-- Light intensity readings should be displayed on the Serial Monitor.
-- The system should continuously monitor the surrounding light conditions.
-
-QA Approach
-
-The project is tested for:
-
-- LDR sensor functionality.
-- Light intensity detection.
-- Threshold configuration.
-- Analog input pin configuration.
-- LED switching operation.
-- Serial communication.
-- Program compilation.
-
-Technologies Used
-
-- Arduino Uno
-- Arduino IDE
-- Embedded C/C++
-- GitHub
-
-Project Purpose
-
-This project demonstrates an automated lighting system that reduces manual operation by controlling street lights according to surrounding light conditions.
+This process helped improve project documentation, issue tracking and change management.
